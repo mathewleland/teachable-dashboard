@@ -11,6 +11,9 @@ Welcome to the **Teachable Dashboard**! 🚀 This Next.js app provides a sleek a
 
 ## 🛠️ Getting Started
 
+Site is deployed live here:
+https://teachable-dashboard.vercel.app/
+
 Follow these simple steps to get the project up and running locally:
 
 ### 1. Clone the Repository
