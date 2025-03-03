@@ -7,7 +7,9 @@ jest.mock('next/image', () => ({
   __esModule: true,
   default: (props) => {
     // eslint-disable-next-line jsx-a11y/alt-text, @next/next/no-img-element
-    return <img {...props} />;
+    return <img
+      {...props}
+    />;
   },
 }));
 
@@ -58,7 +60,8 @@ describe('CourseCard', () => {
     );
     const image = screen.getByAltText('Test Course course thumbnail');
     expect(image).toBeInTheDocument();
-    expect(image).toHaveAttribute('src', 'https://example.com/image.jpg');
+    const expectedSrc = `/_next/image?url=${encodeURIComponent(mockCourse.image_url)}&w=3840&q=75`;
+    expect(image).toHaveAttribute('src', expectedSrc);
   });
 
   it('does not render image when image_url is not provided', () => {

@@ -1,2 +1,4 @@
 import '@testing-library/jest-dom';
-import { expect } from '@jest/globals';
+import { TextEncoder } from 'util';
+
+global.TextEncoder = TextEncoder;
