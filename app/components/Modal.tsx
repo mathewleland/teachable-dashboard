@@ -26,7 +26,7 @@ export default function Modal({
           <h2 className="text-xl font-semibold">{title}</h2>
           <button
             onClick={onClose}
-            className="text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200"
+            className="text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200 cursor-pointer"
           >
             Close
           </button>
