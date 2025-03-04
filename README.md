@@ -19,7 +19,7 @@ Follow these simple steps to get the project up and running locally:
 ### 1. Clone the Repository
 
 ```bash
-git clone <your-repo-url>
+git clone https://github.com/mathewleland/teachable-dashboard.git
 cd teachable-dashboard
 ```
 
